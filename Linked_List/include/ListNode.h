@@ -1,6 +1,5 @@
 #ifndef LIST_NODE_H
 #define LIST_NODE_H
-#include <memory>
 class ListNode {
 public:
   ListNode();
