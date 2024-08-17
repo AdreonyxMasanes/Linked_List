@@ -1,7 +1,7 @@
 #include <iostream>
 #include "LinkedList.h"
 int main () {
-  LinkedList my_list;
+  LinkedList<int> my_list;
   
 
   my_list.NewHead(2);

@@ -19,9 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\LinkedList.cpp" />
     <ClCompile Include="src\main.cpp" />
-    <ClCompile Include="src\ListNode.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\LinkedList.h" />

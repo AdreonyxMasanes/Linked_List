@@ -1,20 +1,34 @@
 #ifndef LIST_NODE_H
 #define LIST_NODE_H
+template<typename T>
 class ListNode {
 public:
-  ListNode();
-  ListNode(int val);
+  ListNode(T value) : m_value(value){
+  }
 
-  ListNode* Next() const;
-  ListNode* Prev() const;
-  int Value() const;
+  ListNode<T>* Next() const {
+    return m_next;
+  }
 
-  void SetNext(ListNode* next);
-  void SetPrev(ListNode* next);
+  ListNode<T>* Prev() const {
+    return m_prev;
+  }
+
+  T Value() const {
+    return m_value;
+  }
+  
+  void SetNext(ListNode<T>* next) {
+    m_next = next;
+  }
+
+  void SetPrev(ListNode<T>* prev) {
+    m_prev = prev;
+  }
 
 private:
-  int m_value;
-  ListNode* m_next = nullptr;
-  ListNode* m_prev = nullptr;
+  T m_value;
+  ListNode<T>* m_next = nullptr;
+  ListNode<T>* m_prev = nullptr;
 };
 #endif // !LINKED_LIST_H
